@@ -1,0 +1,26 @@
+.Link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+    border-radius: 5px;
+}
+.Link:hover {
+    background-color: rgba(165, 181, 194, 0.603);
+}
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 30px;
+}
+header {
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+}
