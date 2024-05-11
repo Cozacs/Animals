@@ -7,7 +7,6 @@ export default function Header() {
             <nav>
                 <Link to="/" className="Link">Home</Link>
                 <Link to="/Contacts" className="Link">Contact</Link>
-                <Link to="/Info" className="Link">Info</Link>
             </nav>
         </header>
     );
