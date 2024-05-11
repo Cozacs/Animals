@@ -19,7 +19,6 @@ export default function Home() {
         }
         setThumbnails(nextIndexes);
     };
-    
 
     const handleAnimation = () => {
         setShow(true);
@@ -83,7 +82,7 @@ export default function Home() {
             </div>
             <div className="thumbnail">
                 {thumbnails.map((item, index) => (
-                    <div key={index} className="item">
+                    <div key={index} className="item" onClick={() => setAnimal(item.id-1)}>
                         <img src={item.img} alt={item.title} />
                         <div className="content">
                             <div className="title">{item.title}</div>
