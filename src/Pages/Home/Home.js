@@ -8,7 +8,6 @@ export default function Home() {
     const [animal, setAnimal] = useState(0);
     const [thumb, setThumb] = useState([]);
     const [show, setShow] = useState(false);
-    const [grow, setGrow] = useState(false);
     const [thumbnails, setThumbnails] = useState([]);
 
     const adjustThumbnails = () => {
@@ -22,12 +21,10 @@ export default function Home() {
 
     const handleAnimation = () => {
         setShow(true);
-        setGrow(true);
     
         // Opção para remover a classe após a animação para permitir repetição
         setTimeout(() => {
           setShow(false);
-          setGrow(false);
         }, 2000); // Duração da animação
     };
 
@@ -67,7 +64,7 @@ export default function Home() {
         <div className="carousel">
             <div className="list">
                 <div className="item">
-                    <img src={Dados[animal].img} alt="animal" className={grow ? "grow" : ""} />
+                    <img src={Dados[animal].img} alt="animal" className={show ? "grow" : ""} />
                     <div className="content">
                         <div className={show ? "author show" : "author"}>COZACS</div>
                         <div className={show ? "title show" : "title"}>{Dados[animal].title}</div>
