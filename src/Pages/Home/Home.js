@@ -89,7 +89,7 @@ export default function Home() {
                 ))}
             </div>
             <div className="arrows">
-                <button id="prev" onClick={() => prev()}>prev</button>
+                <button id="prev" onClick={() => prev()}>prevv</button>
                 <button id="next" onClick={() => next()}>next</button>
             </div>
         </div>
